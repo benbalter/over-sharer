@@ -14,6 +14,12 @@ You can then freely send the resulting URL to anyone you'd like to share the doc
 
 Done sharing? Simply click the "Unshare" button at the top of the page and Over Sharer will forget about the document.
 
+## Demo
+
+[over-sharer.herokuapp.com](https://over-sharer.herokuapp.com/)
+
+**Note**: You probably shouldn't use that to share anything sensitive. Service is provided *as is* and all that, with no warranty, implied or otherwise.
+
 ## Set up
 
 Over Sharer is designed to work on Heroku, but you can use it anywhere that supports Sinatra.
