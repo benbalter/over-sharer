@@ -14,6 +14,10 @@ You can then freely send the resulting URL to anyone you'd like to share the doc
 
 Done sharing? Simply click the "Unshare" button at the top of the page and Over Sharer will forget about the document.
 
+## Status
+
+Rough, proof of concept. If you think it'd be useful, contributions are both welcome and encouraged.
+
 ## Demo
 
 [over-sharer.herokuapp.com](https://over-sharer.herokuapp.com/)
