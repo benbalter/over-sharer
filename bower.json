@@ -1,0 +1,15 @@
+{
+  "name": "over-sharer",
+  "authors": [
+    "Ben Balter <ben.balter@github.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "https://github.com/benbalter/over-sharer",
+  "dependencies": {
+    "primer-css": "~2.4.0",
+    "primer-markdown": "~2.3.0"
+  }
+}

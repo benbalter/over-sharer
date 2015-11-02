@@ -1,0 +1,21 @@
+<% unless msg.to_s.empty? %>
+  <div class="columns">
+    <div class="one-half column centered">
+      <div class="flash"><%= msg %></div>
+    </div>
+  </div>
+<% end %>
+
+<div class="columns">
+  <div class="one-half column centered">
+    <form method="post" action="/">
+      <label for="github_url">GitHub URL:</label>
+      <p class="note">
+        Enter the full path to a markdown document on GitHub to get a private, shareable URL.
+      </p>
+      <input type="url" class="input-block" name="github_url" placeholder="https://github.com/benbalter/over-sharer/blob/master/README.md" />
+
+      <button class="btn" type="submit">Genereate shareable URL</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<div>
+  <h1>
+    <a href="<%= url %>">
+      <code><%= path %></code> on
+      <code><%= ref %></code> in
+      <code><%= repo %></code>
+    </a>
+  </h1>
+  <h2 class="lead">
+    Shared by <a href="<%= created_by.html_url %>">@<%= created_by.login %></a>
+  </h2>
+  <form method="post">
+    <input type="hidden" name="_method" value="DELETE">
+    <button class="btn" type="submit">Unshare</button>
+  </form>
+</div>
+
+<div class="markdown-body">
+  <%= contents %>
+</div>

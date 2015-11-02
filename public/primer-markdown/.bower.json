@@ -1,0 +1,31 @@
+{
+  "name": "primer-markdown",
+  "keywords": [
+    "github",
+    "markdown",
+    "css"
+  ],
+  "main": [
+    "dist/user-content.css"
+  ],
+  "ignore": [
+    "**/.*",
+    "*.js",
+    "README.md",
+    "Gruntfile.js",
+    "package.json",
+    "render-test.md"
+  ],
+  "homepage": "https://github.com/primer/markdown",
+  "version": "2.3.0",
+  "_release": "2.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.3.0",
+    "commit": "c1d78b7cb820f0b3d69617f1ccf405a5d9322141"
+  },
+  "_source": "git://github.com/primer/markdown.git",
+  "_target": "~2.3.0",
+  "_originalSource": "primer-markdown",
+  "_direct": true
+}
