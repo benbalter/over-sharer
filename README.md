@@ -1,6 +1,6 @@
 # Over Sharer
 
-An app to share private markdown files from GitHub with a secret url
+An app to share individual Markdown files from private GitHub repositories with just a secret url
 
 ## What it does
 
