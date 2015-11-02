@@ -50,6 +50,14 @@ class OverSharer < Sinatra::Base
     false
   end
 
+  error 404 do
+    erb :index, locals: { msg: "Not found" }
+  end
+
+  error 406 do
+    erb :index, locals: { msg: "Unauthorized" }
+  end
+
   get "/" do
     erb :index, locals: { msg: "" }
   end
@@ -84,7 +92,11 @@ class OverSharer < Sinatra::Base
     halt 404 unless doc
 
     client   = Octokit::Client.new access_token: doc["token"]
-    response = client.contents doc["repo"], path: doc["path"], ref: doc["ref"]
+    begin
+      response = client.contents doc["repo"], path: doc["path"], ref: doc["ref"]
+    rescue Octokit::NotFound
+      halt 404
+    end
     markdown = Base64.decode64(response.content).force_encoding("UTF-8")
     html     = client.markdown markdown, mode: "gfm", context: doc["repo"]
 
