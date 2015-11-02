@@ -18,8 +18,7 @@ class OverSharer < Sinatra::Base
   set :method_override, true
 
   configure do
-    uri = URI.parse(ENV["REDISTOGO_URL"] || "redis://127.0.0.1:6379")
-    @@redis = Redis.new(:host => uri.host, :port => uri.port,:password => uri.password)
+    @@redis = Redis.new(url: ENV["REDIS_URL"])
   end
 
   use Rack::Session::Cookie, {
@@ -76,7 +75,7 @@ class OverSharer < Sinatra::Base
       path:  path,
       token: github_user.token
     }
-    
+
     redirect "/#{id}"
   end
 
